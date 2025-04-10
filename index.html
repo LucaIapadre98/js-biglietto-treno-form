@@ -21,41 +21,42 @@
     <h1 class="title-main-top d-flex justify-content-center text-white pt-5">
         Calcola il prezzo del tuo biglietto del treno
     </h1>
-    <div class="main-top bg-white pt-4 ">
-        <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label class="form-label" ><h5>Nome Cognome</h5></label>
-                            <input type="text"  id="name-input" placeholder="Inserisci nome e cognome">
+    <form id="register-person-form">
+        <div class="main-top bg-white pt-4 ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4 p-3">
+                            <div class="mb-3">
+                                <label class="formGroupExampleInput" ><h5>Nome Cognome</h5></label>
+                                <input type="text" class="form-control" id="name-input" placeholder="Inserisci nome e cognome">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="mb-3">
-                            <label class="form-label"><h5>kM da percorrere</h5></label>
-                            <input type="text"  id="distance-input" placeholder="Inserisci km ">
+                        <div class="col-4 p-3">
+                            <div class="mb-3">
+                                <label class="formGroupExampleInput" ><h5>Km da percorrere</h5></label>
+                                <input type="text" class="form-control" id="distance-input" placeholder="Inserisci la percorrenza">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div>
-                            <label  id="age-input"><h5>Fascia d'età</h5></label>
+                        <div class="col-4 p-3">
+                            <div>
+                                <label class="formGroupExampleInput" ><h5>Fascia d'età</h5></label>
+                            </div>
+                            <select class=" form-control form-control" id="age-input" type="text">
+                              <option value="Minorenne">Minorenne</option>
+                              <option value="Maggiorenne">Maggiorenne</option>
+                              <option value="Over 65">Over 65</option>
+                            </select>
                         </div>
-                        <select class=" form-control form-control" aria-label= "" type="text">
-                          <option value="1">Minorenne</option>
-                          <option value="2">Maggiorenne</option>
-                          <option value="3">Over 65</option>
-                        </select>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="button-main-bottom d-flex justify-content-center pt-5">
-            <button class="btn btn-secondary m-2" id="btn-generate">Genera</button>
-            <button class="btn btn-secondary m-2" id="btn-cancel">Annulla</button>
-        </div>
-    </div>
-
+            <div class="button-main-bottom d-flex justify-content-center pt-5">
+                <button class="btn btn-secondary m-2" id="btn-generate">Genera</button>
+                <button class="btn btn-secondary m-2" id="btn-cancel">Annulla</button>
+            </div>
+        </div>    
+    </form>
     <div class="main-bottom">
         <h1 class="title-main-bottom d-flex justify-content-center text-white pt-5">
             Il tuo biglietto
