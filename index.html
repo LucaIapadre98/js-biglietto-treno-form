@@ -28,21 +28,21 @@
                     <div class="row">
                         <div class="col-4 p-3">
                             <div class="mb-3">
-                                <label class="formGroupExampleInput" ><h5>Nome Cognome</h5></label>
+                                <label><h5>Nome Cognome</h5></label>
                                 <input type="text" class="form-control" id="name-input" placeholder="Inserisci nome e cognome">
                             </div>
                         </div>
                         <div class="col-4 p-3">
                             <div class="mb-3">
-                                <label class="formGroupExampleInput" ><h5>Km da percorrere</h5></label>
+                                <label><h5>Km da percorrere</h5></label>
                                 <input type="text" class="form-control" id="distance-input" placeholder="Inserisci la percorrenza">
                             </div>
                         </div>
                         <div class="col-4 p-3">
-                            <div>
-                                <label class="formGroupExampleInput" ><h5>Fascia d'età</h5></label>
+                            <div >
+                                <label><h5>Fascia d'età</h5></label>
                             </div>
-                            <select class=" form-control form-control" id="age-input" type="text">
+                            <select class=" form-control form-control" id="age-input" type="number">
                               <option value="Minorenne">Minorenne</option>
                               <option value="Maggiorenne">Maggiorenne</option>
                               <option value="Over 65">Over 65</option>
@@ -62,7 +62,35 @@
             Il tuo biglietto
         </h1>
         <div class="row">
-            <div class="col-12">tabella 2</div>
+            <div class="col-12">
+                <div class="card mb-3" id="person-card">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <h4 class="card-title p-3">Nome e Cognome</h4>
+                      </div>
+                      <div class="col-3">
+                        <div class="card-body">
+                            <h5 class="card-distance">Distanza km</h5>
+                            <p class="distance-text">100</p>
+                            
+                          </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="card-body">
+                            <h5 class="card-price">Costo biglietto €</h5>
+                            <p class="card-price-text"></p>
+                            
+                          </div>
+                      </div>
+                      <div class="col-3">
+                        <div class="card-body">
+                            <h5 class="card-discount">Offerta %</h5>
+                            <p class="card-discount-text"></p>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
 </body>
